@@ -17,8 +17,8 @@ frontend  Green_frontend
         default_backend Green_backend
 backend Green_backend
         balance roundrobin
-        server 421627-web-01 35.153.51.9:80 check
-        server 421627-web-02 100.27.4.223:80 check
+        server 421627-web-01 30.153.51.90:80 check
+        server 421627-web-02 10.27.44.223:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
